@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://neodhhpqdbr6"]
+
+[ext_resource type="Texture2D" uid="uid://1voscl2crvkf" path="res://Assets/Sprites/Untitled 04-26-2025 11-07-35.PNG" id="1_5pwwq"]
+[ext_resource type="Texture2D" uid="uid://djhfwu4auvosp" path="res://Assets/Sprites/Untitled 04-26-2025 11-07-35 2.PNG" id="2_ria5h"]
+
+[node name="Parallax" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0)
+motion_mirroring = Vector2(320, 0)
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/Sky"]
+offset_right = 320.0
+offset_bottom = 144.0
+texture = ExtResource("1_5pwwq")
+stretch_mode = 1
+
+[node name="Far Grass" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(320, 0)
+
+[node name="TextureRect2" type="TextureRect" parent="ParallaxBackground"]
+offset_top = 8.0
+offset_right = 320.0
+offset_bottom = 152.0
+texture = ExtResource("2_ria5h")
+stretch_mode = 1
