@@ -5,6 +5,7 @@ class_name PlayerController
 @export var jump_power = 10.0
 @onready var sfx_jump: AudioStreamPlayer2D = $sfx_jump
 
+
 var speed_multiplier = 30.0
 var jump_multiplier = -30.0
 var direction = 0
@@ -15,7 +16,7 @@ var max_jumps = 2
 func _input(event):
 	
 	if Input.is_action_just_released("jump") and velocity.y < 0:
-		velocity.y = jump_multiplier / 3
+		velocity.y = jump_multiplier / 4
 	
 	if is_on_floor():
 		jump_count = 0

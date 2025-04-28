@@ -106,6 +106,7 @@ script = ExtResource("1_7dd06")
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -16)
 zoom = Vector2(7, 7)
+limit_bottom = 80
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
 
